@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+    background-color: rgba(233, 222, 212);
+}
+
+.main-city_cartoon {
+    position: absolute;
+    height: 100%;
+    width: 102%;
+}
+
+
+.city_cartoon-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: center / cover no-repeat url('./images/image\ 23.png');
+    /* background: center / cover no-repeat url('./images/background.png'); */
+    z-index: 5;
+    /* background-color: rgba(124, 190, 154, 50%); */
+    opacity: 0%;
+}
+
+.city_cartoon-city {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: bottom no-repeat url('./images/city.png'),
+        bottom no-repeat url('./images/Vector\ 3.png');
+    z-index: 4;
+}
+
+.city_cartoon-path {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: bottom no-repeat url('./images/path.png');
+    right: 1em;
+    z-index: 5;
+}
+
+.city_cartoon-horse {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: bottom no-repeat url('./images/horse.png');
+    left: 14.8em;
+    z-index: 5;
+}
+
+.city_cartoon-pawn {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: bottom no-repeat url('./images/pawn.png');
+    left: 36.5em;
+    bottom: 1.2em;
+    z-index: 5;
+}
+
+.city_cartoon-queen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: center no-repeat url('./images/queen.png');
+    left: 6em;
+    bottom: -3.5em;
+    z-index: 3;
+}
+
+.city_cartoon-chess {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: bottom no-repeat url('./images/chess.png');
+    left: 27.5em;
+    bottom: 17em;
+    z-index: 3;
+}
+
+.city_cartoon-circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: right no-repeat url('./images/Ellipse.png'); */
+    /* left: 27.5em; */
+    /* bottom: 17em; */
+    /* z-index: 1; */
+}
+
+.city_cartoon-circle-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: right no-repeat url('./images/Ellipse.png');
+    right: 3.7em;
+    bottom: 2.6em;
+}
+
+.city_cartoon-circle-words {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: right no-repeat url('./images/word.png');
+    left: -1.5em;
+    bottom: 0.8em;
+    opacity: 30%;
+    /* z-index: ; */
+}
+
+.main-wrapper {
+    opacity: 1;
+    position: relative;
+    width: 89.6%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+
+
+.main-header {
+    position: relative;
+    padding-top: 1.6em;
+    z-index: 6;
+
+}
+
+/* 
+.main-logo {
+    padding-left: 0.2em;
+} */
+.main-content {
+    position: relative;
+    padding-top: 3.5em;
+    z-index: 6;
+}
+
+.content-header {
+    font-weight: 500;
+    font-family: 'Merriweather';
+    font-size: 60px;
+    color: #313131;
+    text-transform: uppercase;
+    line-height: 110%;
+}
+
+.content-header span {
+    display: block;
+    max-width: 45%;
+}
+
+.content-header>span:nth-child(3n) {
+    text-align: center;
+}
+
+.content-header>span:last-child {
+    text-align: end;
+}
+
+.content-buttons {
+    padding-top: 7em;
+    width: 44.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-support,
+.content-details {
+    width: 49%;
+    height: 5.5em;
+    border-radius: 3em;
+}
