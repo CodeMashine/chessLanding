@@ -163,7 +163,8 @@
 }
 
 .content-header>span:last-child {
-    text-align: end;
+    padding-left: 2.2rem;
+    /* text-align: end; */
 }
 
 .content-buttons {
@@ -175,7 +176,70 @@
 
 .content-support,
 .content-details {
-    width: 49%;
+    width: 48%;
     height: 5.5em;
     border-radius: 3em;
+    border: none;
+    transition: 1s;
 }
+
+.content-support {
+    background-color: #000;
+}
+
+.content-details {
+    border: 3px solid #000;
+    background-color: transparent;
+}
+
+.content-support>div,
+.content-details>div {
+    font-family: 'Golos Text';
+    font-size: medium;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+/* .content-details div {
+    width: 40%;
+} */
+
+.content-support div {
+    color: #fff;
+}
+
+.content-support:hover {
+    cursor: pointer;
+    background-color: #FBCE51;
+}
+
+.content-support:hover div {
+    color: #000;
+}
+
+.content-details:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.content-details:hover div {
+    color: #fff;
+}
+
+/* 
+@media screen and (max-width: 380px) {
+
+    .content-support>div,
+    .content-details>div {
+        width: 90%;
+    }
+
+
+
+    .content-support>div div,
+    .content-details>div div {
+        display: inline;
+    }
+} */
