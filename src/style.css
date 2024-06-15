@@ -243,3 +243,42 @@
         display: inline;
     }
 } */
+
+
+.marquee-container {
+    width: 100%;
+    background-color: #F54932;
+    display: flex;
+    /* overflow: hidden; */
+
+}
+
+.marquee-container div {
+    width: 200%;
+}
+
+.marquee {
+    display: flex;
+    padding: 1em 0;
+    animation: scroll 10s linear infinite;
+}
+
+
+.marquee-item {
+    text-transform: uppercase;
+    font-family: 'Merriweather';
+    font-size: 22px;
+    white-space: nowrap;
+    color: #fff;
+    margin: 0 0.7em;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
